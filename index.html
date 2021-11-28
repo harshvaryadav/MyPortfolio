@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Portfolio</title>
+</head>
+<body  onload="func(),Typewriter()">  
+    <div id="Home">
+        <div id="div">
+            <div id="logo"> 
+             <h1 id="demo">Portfolio</h1>  
+            </div>
+            <div id="topbar">
+             <a href="#Home">Home</a>  
+             <a href="#skill">Skills</a> 
+             <a href="#project">Projects</a>  
+             <a href="#About">About</a>
+            </div>
+            <div id="bs">
+                <span id="toggle" class="fas fa-toggle-on " onclick="change()" style="font-size:30px; color:white;"></span> 
+            </div>
+        </div>
+        <h2 id="h">I am <span id="s" style="color:yellow;"></span></h2> 
+        <img id="Img" src="https://wallpaperaccess.com/full/5652006.jpg">
+    </div>                  
+    <div id="bar" onclick="fun()"><i class="fas fa-align-left bars" id="b" style="font-size:30px; font-weight:bold;"></i></div> 
+    <div id="Nav">
+        <a href="#Home">Home</a>  
+        <a href="#skill">Skills</a> 
+        <a href="#project">Projects</a>
+        <a href="#myachievements">Achievements</a>  
+        <a href="#About">About</a>
+    </div>
+    <div id="skill">
+        <div class="h">My Skills</div><br>
+        <div class="myskill">
+            <img class="img" src="https://syntaxxx.com/wp-content/uploads/2014/08/html5-logo-600.jpg">
+        </div>
+        <div class="myskill">
+            <img class="img" src="https://www.wallpaperuse.com/wallp/31-312263_m.jpg">
+        </div>
+        <div class="myskill">
+            <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png">
+        </div>
+        <div class="myskill">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxbo0yaEtgcrv6W9fq83_pWn5U95ZnLx3bEkRfpAIznXStRjAO-sml1E7srXz4BPsnHjA&usqp=CAU">
+        </div>
+        <div class="myskill">
+            <img class="img" src="data:image/jpeg;base64,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">
+        </div>
+        <div class="myskill">
+            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0UN50EnoQ5JUx_2goMXQqgJnmnsHgnJp1WQ&usqp=CAU">
+        </div>
+    </div>
+    <div id="project">
+        <div class="h">My Projects</div><br>
+        <div class="myprojects">
+            <a href="https://harshvaryadav.github.io/responsive-To-DoList/" target="_blank"></href><img class="img1" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1092571024%2F960x0.jpg%3Ffit%3Dscale"></a>
+            <div class="title"> 
+                 <p>TO DO List</p>
+            </div>     
+        </div>
+        <div class="myprojects"> 
+            <a href="https://harshvaryadav.github.io/Responsive-Portfolio/" target="_blank"><img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXzCGGRCNXL4rPCbg4X6q8qLp_48-8vjenCt65WEh2oU57M6nGin-5VxbzGc5adAGgwJI&usqp=CAU"></a>
+            <div class="title">
+                 <p>Filter</p>
+            </div>     
+        </div>
+        <div class="myprojects">  
+            <a href="https://harshvaryadav.github.io/Guess-Game/" target="_blank"><img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSebxV1VKqmlBTabt9-woEAO7qOyr2q1Pspnr-dH6XYKbEElLLj9lDI3HPnZMTzZc2VSNI&usqp=CAU"></a>
+            <div class="title">
+                 <p>Guess Game</p> 
+            </div>     
+        </div>
+        <div class="myprojects">
+            <a href="https://harshvaryadav.github.io/Modal-Login-Form/?" target="_blank"><img class="img1" src="https://i.pinimg.com/originals/40/2d/8c/402d8caf8d8bbaff93b5d5d78209c0dc.png"></a>
+            <div class="title">
+                 <p>Login Page</p>
+            </div>     
+        </div>
+        <div class="myprojects"> 
+            <a href="https://harshvaryadav.github.io/Image-Slider-App/" target="_blank"><img class="img1" src="https://assets.materialup.com/uploads/9ec80c67-2471-4c2e-a711-4928c0f3e12f/preview.png"></a>
+            <div class="title">
+                <p>Image Slider</p>
+           </div>     
+        </div>
+        <div class="myprojects">
+            <a href="https://harshvaryadav.github.io/BMI-calculator/" target="_blank"><img class="img1" src="https://healthteamadvantage.com/wp-content/uploads/2020/09/BMI.jpg"></a>
+            <div class="title">   
+                <p>BMI Calculator</p>
+           </div>     
+        </div>
+    </div>
+    <div id="myachievements">
+         <h1>Achievements:</h1>
+         <h2 class="l">1: I have a good knowledge of DSA.</h2>
+         <h2 class="l">2: I have solved more than 1500+ problem on diff coding platform.</h2>  
+         <h2 class="l">3: I have a good problem solving skill.</h2>   
+         <h2 class="l">4: I am 3star coder at codechef with highest rating of 1696.</h2>  
+         <h2 class="l">5: I am 3 star coder at leetcode with highest rating of 1580.</h2>  
+         <h2 class="l">6: Secured a global rank of 85 in codechef long challange.</h2>  
+
+    </div>
+    <div id="About" >  
+        <footer class="footer">
+            <div>
+                <h1>
+                    About Me
+                </h1>
+            </div> 
+            <p id="p">
+                I am a Harshvardhan Yadav.
+            </p>      
+            <p id="p">
+                I am a Student of IIIT Bhagalpur. 
+            </p>      
+            
+            <div class="l-footer">    
+                <h1>
+                    contact Me
+                </h1>
+                <div class="contact">  
+                     <a href="https://www.facebook.com/harshvardhan.yadav.399488" target="_blank"><span class="fab fa-facebook-f" style="font-size:30px; color:white;"></span></a> 
+                     <br>
+                     <a href="https://www.instagram.com/yadav_harsh1234/" target="_blank"><span class="fab fa-instagram" style="font-size:30px; color:red;"></span></a>   
+                     <br>
+                     <a href="https://www.linkedin.com/in/harshvardhan-yadav-b978b21ba" target="_blank"><span class="fab fa-linkedin" style="font-size:30px; color:#1815fc;"></span></a>
+                     <br>
+                     <a href="https://github.com/harshvaryadav"><span class="fab fa-github" style="font-size:30px; color:red;"></span></a>
+                </div>
+            </div> 
+        </footer>     
+    </div>
+</body>
+</html>
